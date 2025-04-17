@@ -24,7 +24,8 @@
 
 typedef real vector[NDIM], matrix[NDIM][NDIM];
 #ifdef TORONTO
-extern double sqrt(double x);
+//extern double sqrt(double x);
+#include <stdlib.h>
 #endif
 /*
  * Vector operations.

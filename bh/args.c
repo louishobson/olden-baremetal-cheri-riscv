@@ -1,8 +1,8 @@
 /* For copyright information, see olden_v1.0/COPYRIGHT */
 #include <stdlib.h>
 
-extern int NumNodes;
-extern int nbody;
+int NumNodes;
+int nbody;
 
 int dealwithargs(int argc, char *argv[]) {
   int level;

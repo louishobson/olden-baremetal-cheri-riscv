@@ -13,9 +13,9 @@
 #include "code.h"
 
 
-int nbody;
+extern int nbody;
 
-double sqrt(), xrand(), my_rand();
+double xrand(double, double, double), my_rand(double);
 real pow();
 extern icstruct intcoord(bodyptr p, treeptr t);
 extern int BhDebug;
@@ -46,8 +46,8 @@ void freetree(nodeptr n);
 void freetree1(nodeptr n);
 int old_subindex(icstruct ic, int l);
 
-int dealwithargs();
-int error();
+int dealwithargs(int argc, char *argv[]);
+int error(char *);
 
 int arg1;
 
@@ -498,7 +498,7 @@ typedef struct {
 hgstruct gravsub(nodeptr p, hgstruct hg);
 hgstruct walksub(nodeptr p, real dsq, real tolsq, hgstruct hg, int level);
 bool subdivp(nodeptr p, real dsq, real tolsq, hgstruct hg);
-double sqrt(double arg);
+//double sqrt(double arg);
 void grav(real rsize, nodeptr rt, bodyptr q, int nstep, real dthf);
 void vp(bodyptr q, int nstep);
 void hackgrav(bodyptr p, real rsize, nodeptr rt);

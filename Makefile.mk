@@ -91,6 +91,7 @@ OBJS := $(COMMON_OBJS) $(OBJS)
 CFLAGS += \
 	$(RISCV_FLAGS) \
 	-DTORONTO \
+	-DMEMALIGN_IS_NOT_AVAILABLE \
 	-DBARE_METAL \
 	-DCLOCKS_PER_SEC=$(CLOCKS_PER_SEC) \
 	-DHAS_FLOAT=1 \
@@ -103,6 +104,7 @@ CFLAGS += \
 	-ffast-math \
 	-fno-common \
 	-fno-builtin-printf \
+	-Wno-unused-function \
 	-I$(COMMON_DIR)
 ASFLAGS := $(CFLAGS)
 LDFLAGS := \
@@ -134,4 +136,4 @@ main.elf: $(OBJS) $(COMMON_C_SRCS) $(COMMON_ASM_SRCS)
 	$(OBJCOPY) main.elf main.bin -O binary
 
 clean: more_clean
-	rm -rf *.o *.elf output* *.lst *.bin *~
+	rm -rf *.o *.elf *.lst *.bin *~

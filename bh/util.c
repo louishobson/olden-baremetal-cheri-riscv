@@ -46,7 +46,7 @@ double xrand(double xl, double xh, double r)
  * ERROR: scream and die quickly.
  */
 
-error(char *msg)
+void error(char *msg)
 {
     fprintf(stderr, msg);
     if (errno != 0)

@@ -14,6 +14,7 @@ typedef struct future_cell_int{
   HANDLE *value;
 } future_cell_int;
 
-extern void *malloc(unsigned);
+// extern void *malloc(unsigned);
+#include <stdlib.h>
 
 #define NIL ((HANDLE *) 0)

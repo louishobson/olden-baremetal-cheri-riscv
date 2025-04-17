@@ -1,9 +1,4 @@
-LEVEL = ../../../..
+OBJS = args.o node.o par-alloc.o
+include ../Makefile.mk
 
-PROG     = power
-CPPFLAGS = -DTORONTO
-LDFLAGS  = -lm
-FP_TOLERANCE = 0.00001
-
-include $(LEVEL)/MultiSource/Makefile.multisrc
-
+more_clean:

@@ -1,14 +1,4 @@
-LEVEL = ../../../..
+OBJS = args.o em3d.o main.o make_graph.o util.o
+include ../Makefile.mk
 
-PROG       = em3d
-CPPFLAGS   = -DTORONTO
-LDFLAGS    = 
-
-ifdef SMALL_PROBLEM_SIZE
-RUN_OPTIONS = 256 250 35
-else
-RUN_OPTIONS = 1024 1000 125
-endif
-
-include $(LEVEL)/MultiSource/Makefile.multisrc
-
+more_clean:
