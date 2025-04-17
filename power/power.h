@@ -22,7 +22,7 @@ typedef struct demand {
 
 #include <math.h>
 
-#define NULL 0
+//#define NULL 0
 
 #ifdef SMALL_PROBLEM_SIZE   /* __llvm__ SCALED BACK SETTINGS */
 #define NUM_FEEDERS 8
