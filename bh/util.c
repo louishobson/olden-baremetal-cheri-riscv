@@ -48,7 +48,7 @@ double xrand(double xl, double xh, double r)
 
 void error(char *msg)
 {
-    fprintf(stderr, msg);
+    printf(stderr, msg);
     if (errno != 0)
         perror("Error");
     exit(0);

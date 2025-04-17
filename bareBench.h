@@ -108,7 +108,7 @@ int main(void)
   return 0;
 }
 
-#define printf(...)
+#define printf(...) ee_printf(__VA_ARGS__)
 #define fprintf(...)
 #define fflush(...)
 #define main(...) benchmark(__VA_ARGS__)
