@@ -12,6 +12,7 @@
 #include "defs.h"
 #include "code.h"
 
+#include "../bareBench.h"
 
 extern int nbody;
 

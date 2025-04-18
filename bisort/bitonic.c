@@ -10,6 +10,8 @@
 #define CONST_b 31415821
 #define RANGE 100
 
+#include "../bareBench.h"
+
 int NumNodes, NDim;
 
 int my_random(int);

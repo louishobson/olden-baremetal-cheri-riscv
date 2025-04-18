@@ -21,6 +21,8 @@
 extern int NumNodes;
 #endif
 
+#include "../bareBench.h"
+
 int dealwithargs(int argc, char *argv[]);
 
 typedef struct {

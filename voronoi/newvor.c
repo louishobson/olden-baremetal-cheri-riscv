@@ -8,6 +8,7 @@
 #include <malloc.h>
 #endif
 
+#include "../bareBench.h"
 
 VERTEX_PTR *vp ;
 struct VERTEX *va ;

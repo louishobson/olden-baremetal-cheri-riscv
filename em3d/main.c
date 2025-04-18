@@ -3,9 +3,12 @@
 #include "em3d.h"
 #include "make_graph.h"
 
+#include "../bareBench.h"
+
 extern int NumNodes;
 
 int DebugFlag;
+
 
 void print_graph(graph_t *graph, int id) 
 {

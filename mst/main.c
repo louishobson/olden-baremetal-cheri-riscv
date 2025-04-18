@@ -2,6 +2,8 @@
 
 #include "mst.h"
 
+#include "../bareBench.h"
+
 typedef struct blue_return {
   Vertex vert;
   int dist;

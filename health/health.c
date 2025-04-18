@@ -10,6 +10,8 @@
 #include "health.h"
 #include <assert.h>
 
+#include "../bareBench.h"
+
 int  max_level;
 long max_time;
 long long seed;

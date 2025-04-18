@@ -14,6 +14,8 @@
 #include "power.h"
 #include <stdio.h>
 
+#include "../bareBench.h"
+
 /* Domain of thetaR->P map is 0.65 to 1.00 [index*0.01+0.65] */
 double map_P[36] =
 {8752.218091048, 8446.106670416, 8107.990680283,

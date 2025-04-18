@@ -5,6 +5,8 @@
 #define conquer_thresold 150  /* tsp() will use conquer for problems <= conquer_thresold */
 extern int flag;
 
+#include "../bareBench.h"
+
 void print_tree(Tree t)
 {
   Tree left,right;

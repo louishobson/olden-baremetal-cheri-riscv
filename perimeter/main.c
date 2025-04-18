@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../bareBench.h"
+
 static int adj(Direction d, ChildType ct)
 {
   switch (d) 
