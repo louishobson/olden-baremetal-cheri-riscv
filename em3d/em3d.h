@@ -10,6 +10,8 @@
 #ifndef EM3D
 #define EM3D
 
+#include "../printf.h"
+
 void dealwithargs(int argc, char *argv[]);
 void printstats(void);
 void srand48(long);

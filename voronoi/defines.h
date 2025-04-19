@@ -2,6 +2,8 @@
 
 #include <math.h>
 
+#include "../printf.h"
+
 typedef int BOOLEAN;
 typedef unsigned long      uptrint;
 

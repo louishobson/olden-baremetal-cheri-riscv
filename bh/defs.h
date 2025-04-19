@@ -20,6 +20,7 @@
 extern int NumNodes;
 #endif
 
+#include "../printf.h"
 
 #include "stdinc.h"
 

@@ -12,6 +12,8 @@
 #define A	16807.0
 #define M	2147483647.0
 
+#include "../printf.h"
+
 void exit(int);
 
 /* random:

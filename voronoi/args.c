@@ -7,6 +7,7 @@ extern int NumNodes,NDim;
 
 extern int flag;
 
+#include "../printf.h"
 
 int mylog(int num) {
   int j=0,k=1;

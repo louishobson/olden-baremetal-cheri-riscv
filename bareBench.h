@@ -9,11 +9,11 @@
 #include <FreeRTOSConfig.h>
 #define CLOCKS_PER_SEC configPERIPH_CLOCK_HZ
 #else
+#include "printf.h"
 #include "uart_16550.h"
 #endif
 
 int benchmark();
-int ee_printf(const char *fmt, ...);
 void tohost_exit(uintptr_t code);  // From syscalls.c
 
 #ifndef RUNS
@@ -73,6 +73,7 @@ int main(void)
   {
     //puts("Trial\n\r");
     //printf("Run %d\n\r", run+1);
+    ee_printf("Run %d\n", run+1);
     if (benchmark() != 0) {
       ee_printf("FATAL ERROR: Benchmark failed.\n");
       //tohost_exit(1);
@@ -108,9 +109,6 @@ int main(void)
   return 0;
 }
 
-#define printf(...) ee_printf(__VA_ARGS__)
-#define fprintf(...)
-#define fflush(...)
 #define main(...) benchmark(__VA_ARGS__)
 
 #endif

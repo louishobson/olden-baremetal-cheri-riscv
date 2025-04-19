@@ -2,6 +2,9 @@
 
 #include "stdio.h"
 
+#include "../printf.h"
+
+
 typedef struct hash_entry {
   unsigned int key;
   void *entry;

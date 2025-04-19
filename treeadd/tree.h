@@ -9,6 +9,8 @@
 #define PLAIN
 #endif
 
+#include "../printf.h"
+
 typedef struct tree {
     int		val;
     struct tree *left, *right;

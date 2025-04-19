@@ -15,7 +15,7 @@ int dealwithargs(int argc, char *argv[]) {
   if (argc > 1)
     nbody = atoi(argv[1]);
   else
-    nbody = 32;
+    nbody = 512;
 
   return level;
 }

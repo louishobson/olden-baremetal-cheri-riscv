@@ -22,6 +22,8 @@ typedef struct demand {
 
 #include <math.h>
 
+#include "../printf.h"
+
 //#define NULL 0
 
 #ifdef SMALL_PROBLEM_SIZE   /* __llvm__ SCALED BACK SETTINGS */

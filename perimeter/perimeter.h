@@ -14,6 +14,8 @@ extern int NumNodes;
 #include "mem-ref.h"
 #endif
 
+#include "../printf.h"
+
 typedef enum {black, white, grey} Color;
 typedef enum {northwest, northeast, southwest, southeast} ChildType;
 typedef enum {north, east, south, west} Direction;

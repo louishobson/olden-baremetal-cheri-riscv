@@ -7,6 +7,8 @@
 #define chatting printf
 extern int NumNodes;
 
+#include "../printf.h"
+
 typedef struct vert_st {
   int mindist;
   struct vert_st *next;

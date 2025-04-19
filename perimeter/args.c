@@ -13,6 +13,8 @@ extern int __NumNodes;
 int NumNodes;
 #endif
 
+#include "../printf.h"
+
 #ifndef TORONTO
 void filestuff()
 {
@@ -41,7 +43,7 @@ int dealwithargs(int argc, char *argv[])
   if (argc > 1)
     level = atoi(argv[1]);
   else
-    level = 11;
+    level = 8;
 
   return level;
 

@@ -11,6 +11,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../printf.h"
+
 #define chatting printf
 
 #define IA 16807

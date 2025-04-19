@@ -2,6 +2,7 @@
 
 /* ========== PROCEDURE TYPES/NUMS ================== */
 
+#include "../printf.h"
 
 HANDLE *RandTree();
 
