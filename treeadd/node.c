@@ -92,9 +92,7 @@ int main (int argc, char *argv[])
 #ifdef FUTURES
     __ShutDown();
 #endif
-    exit(0);
-
-
+    return 0;
 }
 
 /* TreeAdd:

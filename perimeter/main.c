@@ -248,7 +248,8 @@ int main(int argc, char *argv[])
 #endif
 #endif
 
-  exit(0);
+  //exit(0);
+  return 0;
 }
 
 

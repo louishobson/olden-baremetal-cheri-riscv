@@ -27,8 +27,8 @@ typedef struct demand {
 //#define NULL 0
 
 #ifdef SMALL_PROBLEM_SIZE   /* __llvm__ SCALED BACK SETTINGS */
-#define NUM_FEEDERS 7
-#define LATERALS_PER_FEEDER 14
+#define NUM_FEEDERS 6
+#define LATERALS_PER_FEEDER 12
 #define BRANCHES_PER_LATERAL 4
 #define LEAVES_PER_BRANCH 8
 #else

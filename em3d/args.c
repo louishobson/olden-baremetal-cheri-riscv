@@ -50,7 +50,7 @@ void dealwithargs(int argc, char *argv[])
   if (argc > 1)
     n_nodes = atoi(argv[1]);
   else
-    n_nodes = 64;
+    n_nodes = 256;
 
   if (argc > 2)
     d_nodes = atoi(argv[2]);
