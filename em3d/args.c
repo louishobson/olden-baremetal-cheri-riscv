@@ -55,12 +55,12 @@ void dealwithargs(int argc, char *argv[])
   if (argc > 2)
     d_nodes = atoi(argv[2]);
   else
-    d_nodes = 3;
+    d_nodes = 5;
 
   if (argc > 3)
     local_p = atoi(argv[3]);
   else
-    local_p = 75;
+    local_p = 35;
 }
 
 

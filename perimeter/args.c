@@ -43,7 +43,7 @@ int dealwithargs(int argc, char *argv[])
   if (argc > 1)
     level = atoi(argv[1]);
   else
-    level = 8;
+    level = 6;
 
   return level;
 

@@ -11,12 +11,12 @@ BENCHMARKS="tsp treeadd power perimeter health em3d bisort bh"
 
 if [[ -z "$1" ]]; then
 	for benchmark in $BENCHMARKS ; do
-		make GFE_TARGET=P3 TOOLCHAIN=LLVM CHERI=1 RUNS=1000 SYSROOT_DIR=$SYSROOT -C $benchmark clean all || { echo "$benchmark failed!"; exit 1; }
+		make GFE_TARGET=P3 TOOLCHAIN=LLVM CHERI=1 RUNS=1 SYSROOT_DIR=$SYSROOT -C $benchmark clean all || { echo "$benchmark failed!"; exit 1; }
 	done
 elif [[ "$1" == "clean" ]]; then
 	for benchmark in $BENCHMARKS ; do
-		make GFE_TARGET=P3 TOOLCHAIN=LLVM CHERI=1 RUNS=1000 SYSROOT_DIR=$SYSROOT -C $benchmark clean
+		make GFE_TARGET=P3 TOOLCHAIN=LLVM CHERI=1 RUNS=1 SYSROOT_DIR=$SYSROOT -C $benchmark clean
 	done
 else
-	make GFE_TARGET=P3 TOOLCHAIN=LLVM CHERI=1 RUNS=1000 SYSROOT_DIR=$SYSROOT -C $1 clean all
+	make GFE_TARGET=P3 TOOLCHAIN=LLVM CHERI=1 RUNS=1 SYSROOT_DIR=$SYSROOT -C $1 clean all
 fi

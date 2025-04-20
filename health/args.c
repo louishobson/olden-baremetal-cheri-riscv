@@ -11,7 +11,7 @@
 
 void dealwithargs(int argc, char *argv[]) { 
   if (argc < 4) {
-    max_level = 3;
+    max_level = 6;
     max_time = 15;
     seed = 4;
   } else {
