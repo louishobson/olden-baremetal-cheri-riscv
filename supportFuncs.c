@@ -70,6 +70,7 @@ void * _sbrk(int increment)
 }
 */
 
+/*
 int rand(void)
 {
     return 7;
@@ -79,6 +80,7 @@ void srand(unsigned __seed)
 {
   return;
 }
+*/
 
 // Default behavior is for GCC to send printf output here
 int _write(int fd, const unsigned char *buf, int count)
