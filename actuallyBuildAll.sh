@@ -7,7 +7,7 @@ export LIBRARY_PATH=$SDKROOT/baremetal-riscv64-purecap/riscv64-unknown-elf/lib:$
 
 # voronoi and mst twidle pointer bits, so are broken for CHERI
 
-BENCHMARKS="tsp treeadd power perimeter health em3d bisort bh"
+BENCHMARKS="tsp treeadd treeadd_frag power perimeter health em3d bisort bh"
 
 if [[ -z "$1" ]]; then
 	for benchmark in $BENCHMARKS ; do
